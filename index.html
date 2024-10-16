@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Agenda de Tareas</title>
+</head>
+
+<body>
+	<header>
+		<h1>Creación de Tareas</h1>
+	</header>
+	<main>
+		<div class="task-form">
+			<input type="text" id="task" placeholder="Nombre de la tarea...">
+            <input type="text" id="description" placeholder="Descripción...">
+			<select id="priority">
+				<option value="Alta"> Alta Prioridad </option>
+				<option value="Media"> Media Prioridad </option>
+				<option value="Baja"> Baja Prioridad</option>
+			</select>
+			<input type="date" id="deadline">
+			<button id="add-task">Añadir tarea</button>
+		</div>
+		<div class="task-list" id="task-list">
+			
+		</div>
+		<script src="funciones.js"></script>
+	</main>
+</body>
+
+</html>
