@@ -25,7 +25,7 @@ addTaskButton.addEventListener("click", () => {
 
 	const taskItem = document.createElement("div");
     taskItem.classList.add("task");
-    taskItem.style.backgroundColor = "white";  // Inicialmente, el fondo es blanco
+    taskItem.style.backgroundColor = "white";
     taskItem.innerHTML = `
         <div class="task-header">
             <p>${task}</p>
@@ -50,13 +50,12 @@ taskList.addEventListener("click", (event) => {
     if (event.target.classList.contains("mark-done")) {
         const taskItem = event.target.parentElement;
 
-        // Alternar entre "No Completada" en rojo y "Completada" en verde
         if (event.target.textContent === "No Completada") {
             event.target.textContent = "Completada";
-            event.target.style.backgroundColor = "green";  // Cambiar a verde
+            event.target.style.backgroundColor = "green";
         } else {
             event.target.textContent = "No Completada";
-            event.target.style.backgroundColor = "red";  // Cambiar a rojo
+            event.target.style.backgroundColor = "red";
         }
     }
 });
